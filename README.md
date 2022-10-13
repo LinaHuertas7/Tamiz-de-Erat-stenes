@@ -1,1 +1,1 @@
-# Tamiz Eratostenes
+# El tamiz de Eratóstenes
