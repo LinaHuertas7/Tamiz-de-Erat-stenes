@@ -1,0 +1,49 @@
+/*------------------Variable color------------------------*/
+
+:root {
+	--primary-color: #b9d1f6;
+	--secondary-color: #C8B8DB;
+	--white-color: #ffff;
+}
+
+
+/*------------------Styles principal page----------------*/
+
+h1{
+    margin: 5vw 0vw;
+    text-align: center;
+}
+
+.square {
+    align-items: center;
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+    cursor: pointer;
+    display: flex;
+    height: 10%;
+    justify-content: center;
+    margin: 1vw;
+    transition: 0.5s;
+    width: 7%;
+}
+
+.square p{
+    font-weight: bold;
+}
+
+.square:hover{
+    background-color: var(--secondary-color) ;
+    height: 7.5%;
+    width: 7.5%;
+}
+
+.cotainerNumbers {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    width: 85%;
+}
+
