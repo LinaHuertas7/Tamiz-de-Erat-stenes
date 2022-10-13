@@ -1,7 +1,14 @@
 let userNumber = prompt("Ingresa el numero que deseas: ", 0);
 //let userNumber = 100;
+let numberRange;
 
-let numberRange = parseInt(userNumber);
+
+if (userNumber < 0) { 
+    alert("Ey!, El programa no calcula números negativos, por favor intentalo de nuevo"), location.reload() 
+}else {
+    numberRange = parseInt(userNumber);
+}
+
 let primeNumbers = [];
 let iterations = 0;
 
@@ -15,9 +22,9 @@ for (let i = 2; i < numberRange; i++) {
         i % multiple === 0 ? isPrimeNumber = false : multiple++;
     }
 
-    isPrimeNumber? primeNumbers.push(i):
+    isPrimeNumber ? primeNumbers.push(i) :
 
-    iterations++;
+        iterations++;
 }
 console.log(iterations)
 
